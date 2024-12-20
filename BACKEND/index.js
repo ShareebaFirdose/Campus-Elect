@@ -10,7 +10,7 @@ const AdminsRoute = require("./controller/AdminsRoute");
 
 const app = express();
 mongoose.set("strictQuery", true);
-mongoose.connect("mongodb+srv://Shareeba:sharufirdz@cluster0.jl7kc.mongodb.net/vote");
+mongoose.connect("");
 var db = mongoose.connection;
 db.on("open", () => console.log("Connected to DB"));
 db.on("error", () => console.log("Error Occurred"));
