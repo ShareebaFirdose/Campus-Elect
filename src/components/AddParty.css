@@ -1,0 +1,112 @@
+/* AddVoter.css */
+
+/* General styles for the AddVoter component */
+.addVoter {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 0.5s forwards, color-change-4x 6s linear infinite alternate both; /* Apply fade-in and color change animations */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+/* Color change animation */
+@-webkit-keyframes color-change-4x {
+    0% {
+        background: #19dcea; /* Light blue */
+    }
+    33.3333% {
+        background: #b22cff; /* Purple */
+    }
+    66.666% {
+        background: #ea2222; /* Red */
+    }
+    100% {
+        background: #f5be10; /* Yellow */
+    }
+}
+@keyframes color-change-4x {
+    0% {
+        background: #19dcea; /* Light blue */
+    }
+    33.3333% {
+        background: #b22cff; /* Purple */
+    }
+    66.666% {
+        background: #ea2222; /* Red */
+    }
+    100% {
+        background: #f5be10; /* Yellow */
+    }
+}
+
+/* Styles for the voter data table */
+.tableVoter {
+    max-width: 600px; /* Maximum width for the table */
+    width: 100%; /* Full width */
+    background-color: white; /* White background for the table */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Caption styles */
+.tableVoter caption {
+    margin-bottom: 15px; /* Space below caption */
+}
+
+/* Table and input styles */
+.table {
+    border-collapse: collapse; /* Remove space between borders */
+}
+
+.table td {
+    padding: 15px; /* Space within table cells */
+}
+
+.form-control {
+    width: 100%; /* Full width for input fields */
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px; /* Padding inside input fields */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Radio button styles */
+label {
+    font-weight: normal; /* Normal font weight for labels */
+}
+
+/* Button styles */
+button {
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #ffca2c; /* Change color on hover */
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .tableVoter {
+        max-width: 90%; /* Full width on smaller screens */
+    }
+}

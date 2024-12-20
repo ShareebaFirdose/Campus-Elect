@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /* Young serif */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"); /* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); /* Ubuntu */
+
+:root {
+    --font1: 'Young Serif', serif;
+    --font2: 'Roboto Condensed', sans-serif;
+    --font3: 'Ubuntu', sans-serif;
+}
+
+.barResults {
+    display: flex;
+    font-family: var(--font2);
+    margin: auto;
+    margin-top: 10%;
+}
+
+.resultsCol {
+    background-size: 400% 400%;
+    -webkit-animation: color-change-3x 4s linear infinite alternate both, gradient-animation 10s ease infinite;
+    animation: color-change-3x 4s linear infinite alternate both, gradient-animation 10s ease infinite;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* Adjust text color for better visibility */
+}
+
+/* Color-change animation */
+@-webkit-keyframes color-change-3x {
+    0% {
+        background: #19dcea;
+    }
+    50% {
+        background: #b22cff;
+    }
+    100% {
+        background: #ea2222;
+    }
+}
+
+@keyframes color-change-3x {
+    0% {
+        background: #19dcea;
+    }
+    50% {
+        background: #b22cff;
+    }
+    100% {
+        background: #ea2222;
+    }
+}
+
+/* Background gradient animation */
+@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    }
+    50% {
+        background: linear-gradient(135deg, #ffe5d9 0%, #ffb3b0 100%);
+    }
+    100% {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    }
+}

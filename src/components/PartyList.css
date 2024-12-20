@@ -1,0 +1,78 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /* Young Serif */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"); /* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); /* Ubuntu */
+
+/* Root CSS variables */
+:root {
+  --font1: 'Young Serif', serif;
+  --font2: 'Roboto Condensed', sans-serif;
+  --font3: 'Ubuntu', sans-serif;
+}
+
+/* Keyframes for gradient background animation */
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(135deg, #2c0537 0%, #4c175e 100%);
+  }
+  50% {
+    background: linear-gradient(135deg, #030326 0%, #330661 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #072b48 0%, #094cb7 100%);
+  }
+}
+
+/* PartyList class with background animation */
+.partyList {
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+  font-family: var(--font2);
+  height: 90vh;
+}
+
+/* Flex container within the partyList */
+.partyListflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Footer style */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Keyframes for color-change-3x animation */
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+
+/* Applying color-change-3x to elements */
+.color-change-3x {
+  -webkit-animation: color-change-3x 4s linear infinite alternate both;
+  animation: color-change-3x 4s linear infinite alternate both;
+}

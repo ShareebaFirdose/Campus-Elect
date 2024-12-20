@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /*Young serif*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"); /*Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); /* Ubuntu*/
+:root{
+  --font1 : 'Young Serif', serif;
+  --font2: 'Roboto Condensed', sans-serif;
+  --font3: 'Ubuntu', sans-serif;
+
+}
+.userNav{
+padding: 5px !important;
+}
+
+.userCampusElect{
+
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(222, 231, 228) !important;
+}
+.usernavFlex{
+    display: flex;
+    align-items: center;
+}
+.navRightuser a{
+    font-family: var(--font3) !important;
+    font-size: 18px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    font-weight: 100 !important;
+}
+.navRightuser a:hover{
+color: rgb(244, 240, 233) !important;
+}
+.usernavFont{
+    font-family: var(--font2) !important;
+}
+.votpageFamily{
+    font-family: var(--font3);
+}

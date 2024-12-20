@@ -1,0 +1,101 @@
+/* Container styling */
+.container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f4f8; /* Lightened background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Page title */
+h1.text-center {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+/* Card styling */
+.detail-card {
+    background-color: #ffffff; /* Card background remains white */
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detail-value {
+    font-size: 16px;
+    color: #495057;
+}
+
+.detail-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+/* Adjust spacing */
+.usernavFont {
+    padding: 10px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1.text-center {
+        font-size: 24px;
+    }
+
+    .detail-card {
+        padding: 8px;
+    }
+
+    .detail-value {
+        font-size: 14px;
+    }
+
+    .detail-label {
+        font-size: 12px;
+    }
+}
+
+/* Background animation */
+.color-change-3x {
+    -webkit-animation: color-change-3x 4s linear infinite alternate both;
+    animation: color-change-3x 4s linear infinite alternate both;
+}
+
+/* Keyframes for background color change */
+@-webkit-keyframes color-change-3x {
+    0% {
+        background: #d0e6ef; /* Lightened color */
+    }
+    50% {
+        background: #e3b4f0; /* Lightened color */
+    }
+    100% {
+        background: #f9b5b5; /* Lightened color */
+    }
+}
+@keyframes color-change-3x {
+    0% {
+        background: #cce7e7; /* Lightened color */
+    }
+    50% {
+        background: #e1c6f0; /* Lightened color */
+    }
+    100% {
+        background: hsl(0, 61%, 85%); /* Lighter shade */
+    }
+}

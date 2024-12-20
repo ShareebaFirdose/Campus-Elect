@@ -1,0 +1,27 @@
+{
+  "homepage": "https://DUDYALAGURUSAMEER.github.io/MERNONLINEVOTING",
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "node": "^21.1.0",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.0.1",
+    "otp-generator": "^4.0.1"
+  }
+}

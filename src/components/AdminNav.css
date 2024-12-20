@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /*Young serif*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"); /*Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); /* Ubuntu*/
+:root{
+  --font1 : 'Young Serif', serif;
+  --font2: 'Roboto Condensed', sans-serif;
+  --font3: 'Ubuntu', sans-serif;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+    padding: 15px;
+    font-family:var(--font3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menu-button {
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .menu-items {
+    display: none; 
+  }
+
+  .menu-items.show {
+    display: flex;
+    flex-direction: column; 
+    top: 50px; 
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .menu-items a {
+    padding: 5px;
+    text-decoration: none;
+    color: #f10d0d;
+  }
+
+  .menu-items a:hover {
+    color: #555;
+  }
+
+  .desktop-items {
+    display: flex; 
+    align-items: center;
+  }
+
+  .desktop-items a {
+    padding: 0 !important;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #faf5f5;
+    opacity: 0.7;
+  }
+
+  .desktop-items a:hover {
+    color: rgba(209, 199, 180, 0.878) !important;
+  }
+
+
+  .locActive{
+    color: orange !important;
+    display: flex;
+    text-decoration: underline  !important;
+    text-underline-offset: 5px !important;
+    align-items: center !important;
+    transition: all 0.3s linear !important;
+    opacity: 1 !important;
+  }
+  .locActive:hover{
+    color: rgb(252, 35, 2) !important;
+  
+    text-decoration: underline !important;
+  
+  }
+.adminCampusElect{
+  font-size: 25px !important;
+  color: orange !important ;
+  font-weight: bolder;
+  opacity: 1 !important;
+}

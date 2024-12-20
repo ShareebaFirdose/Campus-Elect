@@ -1,0 +1,73 @@
+/* Background section */
+.bg1 {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fnews.mit.edu%2F2020%2F3-questions-ron-rivest-trusting-electronic-voting-systems-0226&psig=AOvVaw1RenCynPD-nQahm8qPktCr&ust=1733658863323000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOji9trMlYoDFQAAAAAdAAAAABAQ'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: kenburns-bottom-right 10s infinite;
+  }
+  
+  /* Content container */
+  .ctnt {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Main heading */
+  .ctnt h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .special {
+    color: #FF6347;
+    font-size: 3rem;
+    font-style: italic;
+  }
+  
+  /* Paragraph */
+  .ctnt p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 15px 0;
+  }
+  
+  /* Button */
+  .vote-btn {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .vote-btn:hover {
+    background-color: #FF4500;
+    transform: translateY(-5px);
+  }
+  
+  .vote-btn i {
+    font-size: 1.5rem;
+  }
+  
+  /* Animation */
+  @keyframes kenburns-bottom-right {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+    100% {
+      transform: scale(1.25) translate(20px, 20px);
+    }
+  }
+  
